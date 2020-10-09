@@ -1,11 +1,11 @@
 # Simple object detector using keras
 very basic version of custom object detection using pre trained model.
 
--Model can be trained using differenet pre trained model.
--coordinate normlisation has been performed
--Special relu activation is used instead of softmax for object detection
--lower learning  rate is choosed
--mse can be used for activation at last layer
+--Model can be trained using differenet pre trained model.
+--coordinate normlisation has been performed
+--Special relu activation is used instead of softmax for object detection
+--lower learning  rate is choosed
+--mse can be used for activation at last layer
 
 # Implementation
 step 1: annote datasets (images) labelImg.exe software
