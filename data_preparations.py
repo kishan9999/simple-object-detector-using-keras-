@@ -20,16 +20,13 @@ random.shuffle(K)
 for i in K:  
     annotation_file=annotations_directory+N[0][i]
     ds = BeautifulSoup(open(annotation_file).read(), "html.parser")
-    w = int(ds.find("width").string)
-    h = int(ds.find("height").string)
-    
     # Iterating each object elements
     for o in ds.find_all("object"):
         class_label = o.find("name").string
         x_min = max(0, int(float(o.find("xmin").string)))
         y_min = max(0, int(float(o.find("ymin").string)))
-        x_max = min(w, int(float(o.find("xmax").string)))
-        y_max = min(h, int(float(o.find("ymax").string)))
+        x_max = min(int(ds.find("width").string), int(float(o.find("xmax").string)))
+        y_max = min(int(ds.find("height").string), int(float(o.find("ymax").string)))
         # controlling errors
         if x_min >= x_max or y_min >= y_max:
             continue
