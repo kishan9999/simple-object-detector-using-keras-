@@ -23,4 +23,5 @@ Custom datasets created to detect star symbol with different size and locations.
 
 # References:
 https://keras.io/api/applications/inceptionv3/
+
 https://github.com/Samjith888/Keras-retinanet-Training-on-custom-datasets-for-Object-Detection-
