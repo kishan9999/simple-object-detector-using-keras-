@@ -10,7 +10,7 @@ very basic version of custom object detection using pre trained model.
 # Implementation
 step 1: annote datasets (images) labelImg.exe software
 step 2: Process data sets using data_preperations.py
-Step 3: run train_detector2.py 
+Step 3: run train_detector.py 
 
 # Datasets Format:
 Custom datasets created to detect star symbol with different size and locations. 
